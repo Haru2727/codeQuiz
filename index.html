@@ -15,19 +15,23 @@
 
 <body>
   <div class="row">
-
+<!-- link to the highscore page -->
     <a href="./HighScore/HighScore.html">High Scores!</a>
-
-    <div id="timer">Time: </div>
+<!-- timer div to set countdown in -->
+    <div id="timer"> </div>
   </div>
   <div class="container">
     <div class="row">
+      <!-- question area -->
       <div class="jumbotron" id="questions">
-        <h2></h2>
-        <p></p>
-      </div>
-      <div class="d-grid gap-2 col-6 mx-auto" id = "answers">
-        <button id = "clickToStart" class="btn btn-primary" type="button"> </button>
+        <h2>Coding Quiz!</h2>
+        <p>Click the start button to start the Coding Quiz, if you answer incorrectly you will lose time. Once the timer
+          is at zero or you answer all questions the quiz is over. </p>
+          <ul id = "multChoicesUL"> </ul>
+        <div class="d-grid gap-2 col-4 mx-auto" id="answers">
+          <!-- button/answer area -->
+          <button id="clickToStart" class="btn btn-primary" type="button">Start Quiz!</button>
+        </div>
       </div>
     </div>
   </div>
