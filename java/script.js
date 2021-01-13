@@ -1,6 +1,6 @@
 var questions = [
     {
-        title: "Commonly used data types DO NOT include:",
+        title: "Which one of these do commonly used data types DONT FIT in this group?",
         choices: ["strings", "booleans", "alerts", "numbers"],
         answer: "alerts"
     },
@@ -10,17 +10,17 @@ var questions = [
         answer: "parentheses"
     },
     {
-        title: "Arrays in Javascript can be used to store ____.",
+        title: "What can be stored using an ARRAY in Javascript?",
         choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
         answer: "all of the above"
     },
     {
-        title: "String values must be enclosed within ____ when being assigned to variables.",
+        title: "What must string values be enclosed within when being assigned to variables?",
         choices: ["commas", "curly brackets", "quotes", "parenthesis"],
         answer: "quotes"
     },
     {
-        title: "A very useful tool for used during development and debugging for printing content to the debugger is:",
+        title: "What tool would we use during development and debugging for printing content to the debugger?",
         choices: ["Javascript", "terminal / bash", "for loops", "console log"],
         answer: "console log"
     },
