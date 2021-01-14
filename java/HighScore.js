@@ -2,7 +2,7 @@ var highScore = document.querySelector(".highScore");
 var clearHighScore = document.querySelector(".clear-score");
 var goBackButton = document.querySelector(".go-back");
 
-
+// event listener to clear high score
 clearHighScore.addEventListener("click", function () {
    if (clearHighScore){
     localStorage.clear();

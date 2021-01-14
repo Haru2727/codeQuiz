@@ -1,3 +1,13 @@
+
+// Create questions array to loop later 
+// assign variables to link to the html framework
+// create timer loop
+// register the answers..maybe local storage later?
+// create and append the submit initals and high score page.  
+
+
+
+// questions array
 var questions = [
     {
         title: "Which one of these do commonly used data types DONT FIT in this group?",
@@ -133,7 +143,7 @@ function finished() {
     createH1.setAttribute("id", "createH1");
     createH1.textContent = "Clickers Down!"
     questionsEl.appendChild(createH1);
-    // paragraph
+    // paragraph:
     var createP = document.createElement("p");
     createP.setAttribute("id", "createP");
     questionsEl.appendChild(createP);
@@ -143,7 +153,7 @@ function finished() {
     createP.textContent = "Your final score is: " + score;
     questionsEl.appendChild(createP2);
 
-    // Label
+    // Label:
     var createLabel = document.createElement("label");
     createLabel.setAttribute("id", "createLabel");
     createLabel.textContent = "Enter your initials ";
@@ -151,13 +161,13 @@ function finished() {
 
     questionsEl.appendChild(createLabel);
 
-    // input
+    // input area  saw this example online so I have a mixture of bootstrap and appending things
     var createInput = document.createElement("input");
     createInput.setAttribute("type", "text");
     createInput.setAttribute("id", "initials");
     createInput.textContent = "";
     questionsEl.appendChild(createInput);
-    // submit
+    // submit button: 
     var createSubmit = document.createElement("button");
     createSubmit.setAttribute("type", "submit");
     createSubmit.setAttribute("id", "Submit");
@@ -165,7 +175,7 @@ function finished() {
     createSubmit.textContent = "Submit";
 
     questionsEl.appendChild(createSubmit);
-
+// go back button: 
     var createGoBack = document.createElement("button");
     createGoBack.setAttribute("type", "history");
     createGoBack.setAttribute("id", "GoBack");
@@ -173,17 +183,18 @@ function finished() {
     createGoBack.textContent = "Go Back";
     questionsEl.appendChild(createGoBack);
 
-
+// makes the button work
     createGoBack.addEventListener("click", function () {
         document.location.href = "./index.html";
     })
-    // Test
+
+
     // Event listener to capture initials and local storage for initials and score
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
 
         if (initials === null) {
-            console.log("No value entered!");
+            console.log("Enter Something!");
         } else {
             var finalScore = {
                 initials: initials,
