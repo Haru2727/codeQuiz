@@ -1,11 +1,13 @@
-var highScore = document.getElementById("#highScore");
-var clearHighScore = document.getElementById("#clearScore");
-var goBackButton = document.getElementById("#goBack");
+var highScore = document.querySelector(".highScore");
+var clearHighScore = document.querySelector(".clear-score");
+var goBackButton = document.querySelector(".go-back");
 
 
 clearHighScore.addEventListener("click", function () {
+   if (clearHighScore){
     localStorage.clear();
     location.reload();
+   }
 });
 
 // Retreives local stroage 
