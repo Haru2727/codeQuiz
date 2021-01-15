@@ -9,7 +9,7 @@ I used bootstrap to set up my html page using a container and a jumbotron and so
 
 ### Links 
 
-[Link to Timed Code Quiz](https://haru2727.github.io/passwordGenHW3/)
+[Link to Timed Code Quiz](https://haru2727.github.io/codeQuiz/)
 
 
 ![](demo_image/demo.png)
